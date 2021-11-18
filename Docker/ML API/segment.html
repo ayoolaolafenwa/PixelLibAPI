@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+ <body style="background-color:pink">
+        <h1>Welcome to PixelLib Demo Page</h1>
+    <div class = "container">
+
+        <div class = "row">
+            
+                <div class = "col-md-12">
+                    <form  action = "/segmentfrontend" method = post enctype = "multipart/form-data",>
+                        <input id = "file" type = "file" name = "image" onchange="loadimg(event)"  />
+                        <input name = "submit" type = "submit", value = "Segment"/>
+                        <p><img id = "output"></p>
+                    
+                    <img src = "{{imagesource}}"/>
+        
+                    </form>            
+                </div> 
+                </div>
+
+        </div>
+
+    </div> 
+</div>  
+<script>
+
+    var loadimg = function(event) {
+        var image1 = document.getElementById('output');
+        image1.src = URL.createObjectURL(event.target.files[0]);
+    }  
+</script>        
+    </body>
+</html>
