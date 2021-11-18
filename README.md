@@ -70,7 +70,7 @@ You can choose any image and press the button segment, it will display an output
 
 The code for build this API is available in this repository, clone it, make modifications and build your own custom image. 
 
-**Clone Repository**
+**Clone Repository and Build Docker Image**
 
 ```
 git clone ayoolaolafenwa/pixellibapi
