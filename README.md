@@ -1,8 +1,5 @@
-# PixelLibAPI
-
-This is a collection of codes using docker to deploy a machine learning model as a Rest API for performing image segmentation.
-
 # PixelLib API 
+This repository is a collection of codes using docker to deploy a machine learning model as a Rest API for performing image segmentation.
 I used docker to build an image segmentation API using PixelLib segmentation library.PixelLib API is used to perform image segmentation.
 
 ## Pull PixelLib API from Dockerhub
