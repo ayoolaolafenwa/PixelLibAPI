@@ -70,11 +70,31 @@ You can choose any image and press the button segment, it will display an output
 
 The code for build this API is available in this repository, clone it, make modifications and build your own custom image. 
 
-**Clone Repository and Build Docker Image**
+**Clone Repository**
 
 ```
 git clone ayoolaolafenwa/pixellibapi
 
+```
+Download the [PointRend model](https://github.com/ayoolaolafenwa/PixelLib/releases/download/0.2.0/pointrend_resnet50.pkl) used for image segmentation and put it in the folder directory PixelLibAPI.
+
+
+**sample folder directory**
+```
+└── PixelLibAPI
+        ├── app.py
+        ├── Dockerfile
+        ├── pointrend_resnet50.pkl
+    
+        └── static
+        └── templates
+            ├── segment.html
+
+```
+
+**Build Docker Image**
+
+```
 cd PixelLibAPI
 
 docker build -t yourimagename
