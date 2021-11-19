@@ -65,7 +65,7 @@ You can choose any image and press the button segment, it will display an output
 
 ## Build A Custom Docker Image
 
-The code for build this API is available in this repository, clone it, make modifications and build your own custom image. 
+The code for building this API is available in this repository, clone it, make modifications and build your own custom image. 
 
 **Clone Repository**
 
