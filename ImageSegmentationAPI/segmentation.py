@@ -17,7 +17,7 @@ ins.load_model("pointrend_resnet50.pkl")
 
 @app.route("/")
 def home():
-    return render_template("segment.html")
+    return render_template("display.html")
 
 
 @app.route("/segmentapi", methods = ["GET", "POST"])
@@ -29,8 +29,6 @@ def segmentbackend():
         image.save(save_path)
         results, _ = ins.segmentImage(save_path)
 
-        if os.path.exists(save_path):
-            os.remove(save_path)
 
         class_names = results["class_names"]
         class_ids = results["class_ids"].tolist()
@@ -55,7 +53,7 @@ def segmentfrontend():
 
         ins.segmentImage(save_path, show_bboxes = True, output_image_name=save_path)
 
-        return render_template("segment.html", imagesource = save_path)
+        return render_template("display.html", imagesource = save_path)
     
 
 @app.route('/images/<filename>')

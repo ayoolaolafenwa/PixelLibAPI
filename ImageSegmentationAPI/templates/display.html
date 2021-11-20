@@ -17,10 +17,8 @@
                     <form  action = "/segmentfrontend" method = post enctype = "multipart/form-data",>
                         <input id = "file" type = "file" name = "image" onchange="loadimg(event)"  />
                         <input name = "submit" type = "submit", value = "Segment"/>
-                        <p><img id = "output"></p>
-                    
-                    <img src = "{{imagesource}}"/>
-        
+                        <p><img src = "{{imagesource}}", id = "output",  style='width: 800px; height: 650px;'></p>
+                
                     </form>            
                 </div> 
                 </div>
