@@ -83,7 +83,6 @@ Download the [PointRend model](https://github.com/ayoolaolafenwa/PixelLib/releas
         ├── Dockerfile
         ├── pointrend_resnet50.pkl
     
-        └── static
         └── templates
             ├── segment.html
 

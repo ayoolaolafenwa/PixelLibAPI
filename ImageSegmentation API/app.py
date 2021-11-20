@@ -8,6 +8,8 @@ import os
 app = Flask(__name__)
 
 upload_folder = "static"
+os.makedirs(upload_folder, exist_ok=True)
+
 app.config["upload_folder"] = upload_folder 
 
 ins = instanceSegmentation()
