@@ -91,7 +91,7 @@ Download the [PointRend model](https://github.com/ayoolaolafenwa/PixelLib/releas
 **Build Docker Image**
 
 ```
-cd PixelLibAPI
+cd ImageSegmentationAPI
 
 docker build -t yourimagename
 ```
