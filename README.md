@@ -78,7 +78,7 @@ Download the [PointRend model](https://github.com/ayoolaolafenwa/PixelLib/releas
 
 **sample folder directory**
 ```
-└── PixelLibAPI
+└── ImageSegmentationAPI
         ├── app.py
         ├── Dockerfile
         ├── pointrend_resnet50.pkl
