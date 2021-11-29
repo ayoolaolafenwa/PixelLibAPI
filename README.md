@@ -8,7 +8,9 @@ I used docker to build an image segmentation API using PixelLib segmentation lib
 ### Install Docker
 
 **[Windows Installation](https://docs.docker.com/desktop/windows/install/)**
+
 **[Linux Installation](https://docs.docker.com/engine/install/ubuntu/)**
+
 **[macOS Installation](https://docs.docker.com/desktop/mac/install/)**
 <br>
 
@@ -114,7 +116,9 @@ docker build -t yourimagename
 ### Install Kubectl
 
 **[Windows Installation](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)**
+
 **[Linux Installation](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)**
+
 **[macOS Installation](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)**
 <br>
 
@@ -211,7 +215,7 @@ This will be the the page loaded. You can upload any image to test the service.
 ![test6](testimages/seg.png)
 
 
-## Test Deployment Service Segmentation API
+## Test Kubernetes Deployment Service Segmentation API
 
 ``` python
 import requests
