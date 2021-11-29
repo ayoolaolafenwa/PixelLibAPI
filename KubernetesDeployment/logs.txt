@@ -1,0 +1,36 @@
+kubectl apply -f pixellib_deployment.yml
+deployment.apps/pixellib-deployment created
+service/pixellib-service created
+
+kubectl get pods
+NAME                                   READY   STATUS              RESTARTS   AGE
+pixellib-deployment-5b9f884bd5-f9k2m   0/1     ContainerCreating   0          8s
+pixellib-deployment-5b9f884bd5-k5b62   0/1     ContainerCreating   0          8s
+
+
+running
+NAME                                   READY   STATUS    RESTARTS   AGE
+pixellib-deployment-5b9f884bd5-f9k2m   1/1     Running   0          2m32s
+pixellib-deployment-5b9f884bd5-k5b62   1/1     Running   0          2m32s
+
+
+minikube service pixellib-service
+PS C:\Users\olafe\OneDrive\MLOps Github Repo\PixelLibAPI\KubernetesDeployment> minikube service pixellib-service
+|-----------|------------------|-------------|---------------------------|
+| NAMESPACE |       NAME       | TARGET PORT |            URL            |
+|-----------|------------------|-------------|---------------------------|
+| default   | pixellib-service |          80 | http://192.168.49.2:30184 |
+|-----------|------------------|-------------|---------------------------|
+* Starting tunnel for service pixellib-service.
+|-----------|------------------|-------------|------------------------|
+| NAMESPACE |       NAME       | TARGET PORT |          URL           |
+|-----------|------------------|-------------|------------------------|
+| default   | pixellib-service |             | http://127.0.0.1:50780 |
+|-----------|------------------|-------------|------------------------|
+* Opening service default/pixellib-service in default browser...
+! Because you are using a Docker driver on windows, the terminal needs to be open to run it.
+
+
+kub.jpg
+{'boxes': [[32, 380, 127, 612], [245, 334, 324, 549], [584, 208, 649, 356], [58, 433, 106, 495], [787, 521, 1021, 767], [487, 250, 555, 405], [49, 537, 101, 646], [738, 428, 1012, 674], [109, 197, 155, 255], [789, 462, 873, 518], [890, 8, 962, 60], [252, 458, 299, 565], [839, 334, 891, 369], [941, 193, 1024, 
+341], [870, 582, 937, 650], [485, 318, 545, 423], [293, 181, 553, 392], [403, 146, 643, 348], [584, 244, 630, 320], [101, 240, 368, 494], [885, 13, 947, 38], [793, 277, 1023, 501], [859, 155, 1002, 278], [101, 233, 359, 496], [128, 183, 167, 249], [255, 214, 456, 430], [588, 297, 639, 374], [969, 227, 1017, 263], [687, 229, 719, 283], [271, 224, 451, 428]], 'class_ids': [0, 0, 0, 24, 2, 0, 1, 2, 24, 0, 9, 1, 0, 2, 0, 3, 7, 7, 24, 2, 9, 2, 2, 7, 0, 7, 1, 0, 2, 2], 'class_names': ['person', 'person', 'person', 'backpack', 'car', 'person', 'bicycle', 'car', 'backpack', 'person', 'traffic light', 'bicycle', 'person', 'car', 'person', 'motorcycle', 'truck', 'truck', 'backpack', 'car', 'traffic light', 'car', 'car', 'truck', 'person', 'truck', 'bicycle', 'person', 'car', 'car'], 'mask_shape': [768, 1024, 30], 'object_counts': {'backpack': 3, 'bicycle': 3, 'car': 8, 'motorcycle': 1, 'person': 9, 'traffic light': 2, 'truck': 4}, 'scores': [99, 99, 99, 99, 97, 96, 95, 92, 91, 90, 89, 88, 87, 86, 84, 84, 84, 84, 76, 72, 72, 71, 68, 68, 59, 58, 57, 57, 55, 50]}
