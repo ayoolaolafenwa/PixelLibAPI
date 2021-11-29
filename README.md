@@ -119,6 +119,9 @@ docker build -t yourimagename
 
 ### Local Kubernetes Deployment
 
+**Note**:
+Ensure that you have docker installed before installing **kubectl**. 
+
 ### Install Kubectl
 
 **[Windows Installation](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)**
@@ -155,7 +158,7 @@ cd KubernetesDeployment
 kubectl apply -f pixellib_deployment.yml
 ```
 
-This command will create the pixellib pod deployment and service. This will the log:
+This command will create the pixellib pod deployment and service. This will be the log:
 ```
 deployment.apps/pixellib-deployment created
 service/pixellib-service created
@@ -172,7 +175,7 @@ pixellib-deployment-5b9f884bd5-f9k2m   0/1     ContainerCreating   0          8s
 pixellib-deployment-5b9f884bd5-k5b62   0/1     ContainerCreating   0          8s
 ```
 
-In the logs the status of the pod is *ContainerCreating* which means the pod is still creating. If the internet speed is fast the pod will create within seconds but if not, it will take some minutes. When it is done the status of the pod will change to *Running*.
+In the logs the status of the pods is *ContainerCreating* which means that the pods are still creating. If the internet speed is fast the pods will create within seconds but if not, it will take some minutes. When it is done the status of the pods will change to *Running*.
 
 ```
 NAME                                   READY   STATUS    RESTARTS   AGE
@@ -205,7 +208,7 @@ This will be the output log:
 
 The pixellib service will open in your default browser and if not, copy the second url and paste it in a browser. 
 
-This will be the the page loaded. You can upload any image to test the service.
+This will be the page loaded. You can upload any image to test the service.
 
 ![test4](testimages/lp.png)
 
