@@ -3,7 +3,10 @@ This repository is a collection of codes using docker and kubernetes to deploy a
 I used docker to build an image segmentation API using PixelLib segmentation library and deploy it in Kubernetes.
 
 ##  Tutorials 
-[Docker Image Segmentation Deployment](#Pull-PixelLib-API-from-Dockerhub)
+1 [Docker Image Segmentation Deployment](#Pull-PixelLib-API-from-Dockerhub)
+
+2 [Kubernetes Image Segmentation Deployment](#PixelLib-API-Deployment-on-Kubernetes)
+
 
 ## Note:
 **Read this [article](https://medium.com/p/353525ec39b0) I published on the basic concepts of docker and how it is used to build MachineLearning Rest APIs.**
